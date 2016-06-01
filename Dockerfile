@@ -10,7 +10,7 @@ RUN curl https://gist.githubusercontent.com/SravanthiSinha/ae5561ef3d6d6ef957718
 
 RUN git clone https://github.com/grantjenks/free_python_games.git
 
-RUN curl https://gist.githubusercontent.com/SravanthiSinha/767d1d8a6115ee103651fcdfcd762356/raw/dbeb589c2b3ded785d4c6d76252fef61d5c57882/games.sh > games.sh
+RUN curl  https://gist.githubusercontent.com/SravanthiSinha/767d1d8a6115ee103651fcdfcd762356/raw/647f4aa2a029845dafbb232653e1e617d56f53d7/games.sh > games.sh
 
 # Replace 1000 with your user / group id
 RUN export uid=1000 gid=1000 && \
