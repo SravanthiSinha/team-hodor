@@ -1,12 +1,16 @@
-# This is a comment
 FROM ubuntu:14.04
 RUN apt-get update 
 RUN apt-get install -y emacs
 RUN apt-get install -y curl
 RUN apt-get install -y python
 RUN sudo apt-get install -y python-pygame
+RUN sudo apt-get install -y git
 
-RUN curl https://gist.githubusercontent.com/SravanthiSinha/a889e9b4c5052802fd688e4eb0ea45b3/raw/2902f09f1d7b9152fd7d3841eb286aa8eda7b33d/jumper.py > game.py
+RUN curl https://gist.githubusercontent.com/SravanthiSinha/ae5561ef3d6d6ef9577187711bec3824/raw/72987d440285ba8b0210d68b89595bfadad154f0/mazerunner.py > mazerunner.py
+
+RUN git clone https://github.com/grantjenks/free_python_games.git
+
+RUN curl https://gist.githubusercontent.com/SravanthiSinha/767d1d8a6115ee103651fcdfcd762356/raw/dbeb589c2b3ded785d4c6d76252fef61d5c57882/games.sh > games.sh
 
 # Replace 1000 with your user / group id
 RUN export uid=1000 gid=1000 && \
