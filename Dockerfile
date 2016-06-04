@@ -8,7 +8,7 @@ RUN sudo apt-get install -y git
 
 RUN curl https://gist.githubusercontent.com/SravanthiSinha/ae5561ef3d6d6ef9577187711bec3824/raw/72987d440285ba8b0210d68b89595bfadad154f0/mazerunner.py > mazerunner.py
 
-RUN git clone https://github.com/grantjenks/free_python_games.git
+RUN git clone https://github.com/SravanthiSinha/free_python_games.git
 
 RUN curl  https://gist.githubusercontent.com/SravanthiSinha/767d1d8a6115ee103651fcdfcd762356/raw/647f4aa2a029845dafbb232653e1e617d56f53d7/games.sh > games.sh
 
